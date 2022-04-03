@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bala : MonoBehaviour
 {
-  public float velocidad=2f;
+  public float velocidad=300f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +14,6 @@ public class Bala : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      transform.position += transform.forward * Time.deltaTime;
+      transform.position += transform.forward * Time.deltaTime*velocidad;
     }
 }
